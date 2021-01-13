@@ -49,6 +49,7 @@ export class InfoAdoptUserComponent implements OnInit {
     if (userInfo) {
       this.searchOption['userId'] = userInfo.id;
       this.spinnerService.show();
+      this.listPet = [];
       this.ordersService.getListOrderByUserId(this.searchOption).pipe(finalize(() => {
         this.spinnerService.hide();
       })).subscribe(res => {
