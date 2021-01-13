@@ -1,0 +1,38 @@
+  <div class="modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="avatar">
+          <img src="/assets/img/product-img/p1.jpg" alt="Avatar">
+        </div>
+        <h4 class="modal-title">ĐĂNG NHẬP</h4>
+        <button type="button" class="close" aria-label="Close button" aria-describedby="modal-title"
+                (click)="activeModal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+          <div class="form-group">
+            <input type="email" id="inputEmail" [(ngModel)]="user.username" class="form-control"
+                   placeholder="Email address"
+                   required autofocus [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="form-group">
+            <input type="password" id="inputPassword" [(ngModel)]="user.password" class="form-control"
+                   placeholder="Password"
+                   required
+                   [ngModelOptions]="{standalone: true}">
+          </div>
+          <div class="form-group">
+            <button type="button" [disabled]="!user.username || !user.password" (click)="submit()" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+          </div>
+        </form>
+      </div>
+      <div style="text-align: center;margin-bottom: 10px;">
+        <span>Nếu bạn chưa có tài khoản <span style="cursor: pointer;color: blue;">Đăng ký</span></span>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
