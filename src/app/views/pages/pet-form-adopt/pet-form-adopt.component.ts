@@ -17,7 +17,7 @@ export class PetFormAdoptComponent implements OnInit {
   inputForm = this.fb.group({
     reason: ['', Validators.required],
     conditions: ['', Validators.required],
-    sentDate: ['', Validators.required],
+    sentDate: [{value:'', disabled: true}],
   })
 
   constructor(
@@ -46,6 +46,8 @@ export class PetFormAdoptComponent implements OnInit {
       if (res.body.key === 'SUCCESS') {
         this.toastrService.success('Gửi đơn thành công');
         this.closed();
+      }else{
+        this.toastrService.error(res.body.messages);
       }
     })
   }

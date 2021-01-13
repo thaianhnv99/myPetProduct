@@ -68,7 +68,7 @@
             <div class="row mb-md-2 info-animal">
               <div class="col-12 col-md-4 mb-2 mb-md-0">
                 <div class="row">
-                  <div class="col-1 w-100 h-100 text-center">
+                  <div class="col-1 w-100 h-100 text-center" *ngIf="petItem">
                     <i *ngIf="petItem.sterilization === null" class="status-info text-warning fa fa-question-circle"></i>
                     <i *ngIf="petItem.sterilization === 1" class="status-info text-success fa fa-check-circle"></i>
                     <i *ngIf="petItem.sterilization === 0" class="status-info text-danger fa fa-times-circle"></i>
@@ -96,7 +96,7 @@
             <div class="row mb-md-2">
               <div class="col-12 col-md-4 mb-2 mb-md-0">
                 <div class="row">
-                  <div class="col-1 w-100 h-100 text-center">
+                  <div class="col-1 w-100 h-100 text-center" *ngIf="petItem">
                     <i *ngIf="petItem.vaccination === null" class="status-info text-warning fa fa-question-circle"></i>
                     <i *ngIf="petItem.vaccination === 1" class="status-info text-success fa fa-check-circle"></i>
                     <i *ngIf="petItem.vaccination === 0" class="status-info text-danger fa fa-times-circle"></i>

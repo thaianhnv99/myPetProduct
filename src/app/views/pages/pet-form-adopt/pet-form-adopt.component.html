@@ -23,6 +23,7 @@
           <label class="col-sm-2">Lý do</label>
           <div class="col-sm-4">
             <input [maxLength]="35"
+                   class="form-control"
                    formControlName="reason">
           </div>
         </div>
@@ -30,11 +31,13 @@
           <label class="col-sm-2">Khai báo điều kiện</label>
           <div class="col-sm-4">
             <input [maxLength]="35"
+                   class="form-control"
                    formControlName="conditions">
           </div>
           <label class="col-sm-2">Ngày gửi đơn</label>
           <div class="col-sm-4">
             <input [maxLength]="35"
+                   class="form-control"
                    formControlName="sentDate">
           </div>
         </div>
@@ -42,8 +45,8 @@
     </form>
   </div>
   <div class="card-footer justify-content-between text-right">
-    <button type="submit" (click)="sentAdopt()"
-            [disabled]="inputForm.invalid"
+    <button type="button" (click)="sentAdopt()"
+            [disabled]="inputForm.invalid" autofocus
             class="btn btn-danger btn-shadow mr-2">Gửi
     </button>
     <button type="button" (click)="closed()"
