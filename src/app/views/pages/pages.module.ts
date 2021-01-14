@@ -11,6 +11,7 @@ import {PetPostComponent} from './pet-post/pet-post.component';
 import {PetFormAdoptComponent} from './pet-form-adopt/pet-form-adopt.component';
 import {LoginComponent} from "./login/login.component";
 import { InfoAdoptUserComponent } from './info-adopt-user/info-adopt-user.component';
+import { AdoptPetComponent } from './adopt-pet/adopt-pet.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { InfoAdoptUserComponent } from './info-adopt-user/info-adopt-user.compon
     PetPostComponent,
     PetFormAdoptComponent,
     LoginComponent,
-    InfoAdoptUserComponent
+    InfoAdoptUserComponent,
+    AdoptPetComponent
   ],
   exports: [
     LoginComponent
@@ -40,6 +42,10 @@ import { InfoAdoptUserComponent } from './info-adopt-user/info-adopt-user.compon
       {
         path: 'pets-detail',
         component: PetDetailComponent
+      },
+      {
+        path: 'adopt-pets',
+        component: AdoptPetComponent
       },
       {
         path: 'pets-post',

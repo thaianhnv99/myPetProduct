@@ -27,6 +27,7 @@
                   <th scope="col">STT</th>
                   <th scope="col">Mã đơn nhận</th>
                   <th scope="col">Mã vật nuôi</th>
+                  <th scope="col">Tên vật nuôi</th>
                   <th scope="col">Ngày gửi đơn</th>
                   <th scope="col">Ngày giao</th>
                   <th scope="col">Trạng thái</th>
@@ -37,9 +38,10 @@
                 <tr *ngFor="let item of listPet, let i = index">
                   <th scope="row">{{i + 1}}</th>
                   <td>{{item.orderId}}</td>
-                  <td>{{item.userId}}</td>
-                  <td>{{item.sentDate}}</td>
-                  <td>{{item.deliveryDate}}</td>
+                  <td>{{item.petId}}</td>
+                  <td>{{item.petName}}</td>
+                  <td>{{formatDate(item.sentDate)}}</td>
+                  <td>{{formatDate(item.deliveryDate)}}</td>
                   <td>{{item.status == 0 ? 'Chưa duyệt' : 'Đã duyệt'}}</td>
                   <td>
                     <button type="button" class="btn btn btn-outline-danger"

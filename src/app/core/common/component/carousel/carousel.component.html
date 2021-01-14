@@ -17,9 +17,9 @@
             [style.object-fit]="objectFit"
             draggable="false" class="image" style="width:100%"/>
           <div class="middle">
-            <h6>PETS</h6>
-            <div><span class="product-label">Giới tính: </span><span>cái</span></div>
-            <div><span class="product-label">Tuổi: </span><span>1</span></div>
+            <h6>{{getImage(i)['image']['petName']}}</h6>
+            <div><span class="product-label">Giới tính: </span><span>{{getImage(i)['image']['gender']}}</span></div>
+            <div><span class="product-label">Tuổi: </span><span>{{getImage(i)['image']['age']}}</span></div>
           </div>
         </div>
       </div>

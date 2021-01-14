@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section {
+  background: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.breadcrumb {
+  background-color: #d61c62;
+  display: inline-flex !important;
+}
+
+.adopt-card {
+  padding: 20px;
+  transition: all .3s ease-in-out;
+  margin: 10px;
+}
+
+.adoption-header a {
+  color: #222;
+  font-weight: 700;
+}
+
+.text-capitalize {
+  text-transform: capitalize!important;
+}

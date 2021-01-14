@@ -5,6 +5,7 @@ import {finalize} from "rxjs/operators";
 import {Router} from "@angular/router";
 import {OrdersService} from "../../theme/service/orders.service";
 import {PageConfig} from "../../../core/common/pagination.config";
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-info-adopt-user',
@@ -70,6 +71,10 @@ export class InfoAdoptUserComponent implements OnInit {
     })).subscribe(res => {
       this.fetch();
     })
+  }
+
+  formatDate(date: any){
+    return moment(new Date(date)).format('DD/MM/YYYY');
   }
 
 }
