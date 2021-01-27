@@ -44,7 +44,7 @@
                   <td>{{formatDate(item.deliveryDate)}}</td>
                   <td>{{item.status == 0 ? 'Chưa duyệt' : 'Đã duyệt'}}</td>
                   <td>
-                    <button type="button" class="btn btn btn-outline-danger"
+                    <button type="button" class="btn btn btn-outline-danger" *ngIf="item.status == 0"
                             (click)="removeItem(item)">Xóa
                     </button>
                   </td>

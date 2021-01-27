@@ -33,13 +33,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    FormsModule,
     CoreModule,
     FontAwesomeModule,
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    FormsModule,
     RouterModule,
     FormsModule,
     ReactiveFormsModule,

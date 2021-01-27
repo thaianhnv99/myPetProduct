@@ -20,6 +20,10 @@ export class ContentComponent implements OnInit {
     this.petsList();
   }
 
+  goAdopt(){
+    this.route.navigate(['/adopt-pets'])
+  }
+
   petsList() {
     let body = {
       page: 1,
