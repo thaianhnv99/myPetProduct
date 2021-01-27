@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "myPetProduct"
+  "defaultProject": "myPetProduct",
+  "cli": {
+    "analytics": "52081598-59b3-4e63-890c-39642c04fdc9"
+  }
 }

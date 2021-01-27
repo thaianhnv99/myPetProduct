@@ -30,7 +30,7 @@ export class ContentComponent implements OnInit {
       if (res.body.data.length) {
         res.body.data.forEach(item => {
           item['path'] = item.picture;
-        })
+        });
         this.listPets = res.body.data;
         console.log(this.listPets);
       }
